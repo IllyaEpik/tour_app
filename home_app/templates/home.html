@@ -1,10 +1,17 @@
 {% extends "base.html"%}
 {% block title %} home page {% endblock %}
-{% block content %} 
+{% block content %}
+ 
 {% if username %}
 
 <p>Вітаємо {{ username }}</p>
 
 {% endif %}
- <h1>Головна сторінка</h1> 
+ <h1>Головна сторінка</h1>
+ <form method="post">
+    <input type="text" name="name">
+    <input type="text" name="email">
+    <textarea name="review" id="review">Відгук</textarea>
+    <button>Надіслати</button>
+</form> 
  {% endblock %}
