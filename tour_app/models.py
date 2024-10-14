@@ -1,12 +1,12 @@
-from main.settings import data_base
+from main.settings import DATABASE
 
-class Voucher(data_base.Model):
-    id = data_base.Column(data_base.Integer,primary_key = True)
-    title = data_base.Column(data_base.String(60))
-    date = data_base.Column(data_base.String(60))
-    country = data_base.Column(data_base.String(60))
-    price = data_base.Column(data_base.String(60))
-    description = data_base.Column(data_base.Text)
+class Voucher(DATABASE.Model):
+    id = DATABASE.Column(DATABASE.Integer,primary_key = True)
+    title = DATABASE.Column(DATABASE.String(60))
+    date = DATABASE.Column(DATABASE.String(60))
+    country = DATABASE.Column(DATABASE.String(60))
+    price = DATABASE.Column(DATABASE.String(60))
+    description = DATABASE.Column(DATABASE.Text)
     def __repr__(self) -> str:
         return f"title - {self.title}"
     
