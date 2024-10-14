@@ -1,5 +1,6 @@
-import flask 
-import flask_sqlalchemy,flask_migrate
+import flask_sqlalchemy
+import flask_migrate
+import flask
 import os
 
 

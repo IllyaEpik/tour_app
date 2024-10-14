@@ -3,14 +3,10 @@
 {% block content %}
  <h1>Сторінка відпочинку</h1>
  {% for tour in list_tour %}
-    {% if id == tour.id %}
-    <div>
-        <h2>{{tour.title}}</h2>
+    <form method="post">
+        <button name = "button" value = "{{tour.id}}" type = "submit">{{tour.title}}</button>
         <h3>{{tour.date}}</h3>
         <h3>{{tour.country}}</h3>
-        <h3>{{tour.price}}</h3>
-        <h3>{{tour.description}}</h3>
-    </div>
-    {% endif %}
+    </form>
  {% endfor %} 
 {% endblock %}
