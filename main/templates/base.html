@@ -3,14 +3,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %} {% endblock %}</title>
+    {% block link %} {% endblock %}
 </head>
 <body>
+    <style>a{color: black;}</style>
+    {% if username %}
+        <h1 id="username">{{ username }}</h1>
+    {% endif %}
+    <div id="links">
+        <a href="/login" id="login" class="link">Авторизація</a>
+        <a href="/registration" id="registration" class="link">Регістрація</a>
+        <a href="/" id="home" class="link">Головна</a>
+        <a href="/tour" id="tour" class="link">Путівки</a>
+        {% if username %}
+            <a href="/logout/" style="color:red" class="link">Вийти з аккаунту</a>
+        {% endif %}
+    </div>
     {% block content %} {% endblock %}
-
-    <a href="/">Домашня сторінка</a>
-    <a href="/registration">Сторінка регістрації</a>
-    <a href="/login">Сторінка авторизації</a>
-    <a href="/tour">Сторінка відпочинку</a>
-    
 </body>
 </html>

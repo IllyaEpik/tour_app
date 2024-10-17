@@ -5,6 +5,7 @@ import user_app
 
 main.add_url_rule(rule= '/', view_func= home_app.render_home, methods = ["GET","POST"])
 main.add_url_rule(rule= '/login/', view_func= user_app.render_login, methods = ["GET","POST"])
+main.add_url_rule(rule= '/logout/', view_func= user_app.render_logout)
 main.add_url_rule(rule= '/registration/', view_func= user_app.render_registration, methods = ["GET","POST"])
 main.add_url_rule(rule= '/tour/', view_func= tour_app.render_tour, methods = ["GET","POST"])
 main.register_blueprint(home_app.home)

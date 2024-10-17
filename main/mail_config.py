@@ -2,8 +2,8 @@ import flask_mail
 from .settings import main,DATABASE
 
 
-ADMINISTRATION_ADRESS = "artemvaschenko83@gmail.com"
-ADMINISTRATION_PASSWORD = "sncj nczy toqt atlm"
+ADMINISTRATION_ADRESS = "illyaepik@gmail.com"
+ADMINISTRATION_PASSWORD = "eillya 2354"
 
 
 main.config["MAIL_SERVER"] = 'smtp.gmail.com'

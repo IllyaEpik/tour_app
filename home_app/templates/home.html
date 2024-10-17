@@ -1,17 +1,16 @@
 {% extends "base.html"%}
 {% block title %} home page {% endblock %}
+{% block link %}
+<link rel="stylesheet" href="{{ url_for('home.static', filename = '/style.css') }}" >
+{% endblock %}
 {% block content %}
  
-{% if username %}
 
-<p>Вітаємо {{ username }}</p>
-
-{% endif %}
- <h1>Головна сторінка</h1>
+ <h1 id="main">Головна сторінка</h1>
  <form method="post">
-    <input type="text" name="name">
-    <input type="text" name="email">
-    <textarea name="review" id="review">Відгук</textarea>
-    <button>Надіслати</button>
+    <input type="text" name="name" placeholder="name" id="inform">
+    <input type="text" name="email" placeholder="email" id="inform">
+    <textarea name="review" placeholder="review" id="inform"></textarea>
+    <button>Send</button>
 </form> 
  {% endblock %}

@@ -1,4 +1,4 @@
-import flask
+import flask, flask_login
 from .models import Voucher
 import main.settings as settings
 
@@ -35,12 +35,15 @@ def render_tour():
     for tour in Voucher.query.all():
         list_tour.append(tour)
     print("1")
+    username = None
+    if flask_login.current_user.is_authenticated:
+        username = flask_login.current_user.username
     if flask.request.method == "POST":
         value = flask.request.form["button"]
         # print(value, tour.id)
         # list_tour = []
         # for tour in Voucher.query.filter_by()
-        return flask.render_template("tour.html", list_tour = list_tour, id = int(value))
-    return flask.render_template("all_tours.html", list_tour = list_tour)
+        return flask.render_template("tour.html", list_tour = list_tour, id = int(value), username=username)
+    return flask.render_template("all_tours.html", list_tour = list_tour, username=username)
 
     
