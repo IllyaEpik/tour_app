@@ -4,9 +4,11 @@
 <link rel="stylesheet" href="{{ url_for('tour.static', filename = '/tour.css') }}" >
 {% endblock %}
 {% block content %}
- <h1>Сторінка відпочинку</h1>
+ <h1 id="main">Сторінка відпочинку</h1>
+ <div class="separation"></div>
  {% for tour in list_tour %}
     {% if id == tour.id %}
+
     <div>
         <h2>{{tour.title}}</h2>
         <h3>дата: {{tour.date}}</h3>
@@ -16,4 +18,5 @@
     </div>
     {% endif %}
  {% endfor %} 
+<div class="separation"></div>
 {% endblock %}

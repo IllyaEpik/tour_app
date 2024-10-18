@@ -16,7 +16,7 @@
         <a href="/" id="home" class="link">Головна</a>
         <a href="/tour" id="tour" class="link">Путівки</a>
         {% if username %}
-            <a href="/logout/" style="color:red" class="link">Вийти з аккаунту</a>
+            <a href="/logout/" style="color:red" class="link" id="logout">Вийти з аккаунту</a>
         {% endif %}
     </div>
     {% block content %} {% endblock %}

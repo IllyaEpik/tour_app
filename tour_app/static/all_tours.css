@@ -1,3 +1,104 @@
 #tour{
     color: blue;
 }
+/* form{
+    border: 5px solid #000000;
+    border-radius: 20px;
+    width: 600;
+    height: 500;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 9999;
+    margin: auto;
+} */
+/* input{
+    border: 5px solid #000000;
+    width: 460;
+    height: 80;
+    justify-content: center;
+    align-items: center;
+    margin: 20;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 50;
+}*/
+button{
+    border: 0px solid #000000;
+    /* width: 350;
+    height: 80;
+    justify-content: center;
+    align-items: center;
+    margin: 40;
+    border-radius: 20px;
+    text-align: center;*/
+    font-size: 50; 
+    background-color: white;
+    font: bold;  
+    padding: 0;
+    /* margin: 41.5; */
+}
+#main{
+    text-align: center;
+    /* width: fit-content; */
+    /* display: block; */
+    font-size: 50;
+    margin-top: 50;
+    /* color: red; */
+    /* margin: auto; */
+    /* margin-left: 99px; */
+}
+#links{
+    /* color: aqua; */
+    right: 50;
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+    height: 180;
+    width: 350;
+    font-size: 30;
+    display: block;
+    position:fixed;
+    top: 10px;
+    /* margin: 10px; */
+    /* padding: 10px; */
+}
+/* #link{
+
+    justify-content: center;
+    align-items: center;
+} */
+#home{
+    /* margin-left: 10px; */
+    margin-right: 50;
+
+}
+#tour{
+    /* margin-left: 10px; */
+    margin-right: 20;
+}
+#logout{
+    margin-right: 30;
+}
+#username{
+    position: fixed;
+    top: 10px;
+    height: min-content;
+    margin: 0;
+}
+h3{
+    font-size: 40;
+}
+.separation{
+    width: 400px;
+    height: 1px;
+    border-top: 5px solid #000000;
+    /* margin: auto;
+    text-align: center; */
+}
+/* form{
+    margin: auto;
+    text-align: center;
+} */
