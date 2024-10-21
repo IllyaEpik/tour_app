@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %} Сторінка персоналізації {% endblock %}
+{% block link %} 
+<link rel="stylesheet" href="{{ url_for('personalization.static', filename = '/style.css') }}" >
+<script src="{{ url_for('personalization.static', filename = '/scripts.js') }}" defer></script>
+{% endblock %}
+{% block content %} 
+<h1 id="main">Сторінка персоналізації</h1>
+<form method="post">
+    <button>save</button>
+    <input type="text">
+    <div id="color"></div>
+</form>
+<div value = "{{ color_0 }}" id="color-0" style="display: none;" hidden>{{ color_0 }}</div>
+<!-- <div ></div> -->
+<!-- <div></div> -->
+<!-- <div></div> -->
+{% endblock %} 

@@ -42,7 +42,7 @@ def render_registration():
                 all_is_ok= False
         if all_is_ok:
 
-            print(flask.request.form)
+            
             user = User(
                     username = flask.request.form['username'],
                     password = flask.request.form['password'],

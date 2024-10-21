@@ -21,6 +21,7 @@ form{
     border-radius: 20px;
     text-align: center;
     font-size: 50;
+    background-color: transparent;
 }
 button{
     border: 5px solid #000000;
@@ -32,7 +33,7 @@ button{
     border-radius: 20px;
     text-align: center;
     font-size: 50;
-    background-color: white;    
+    background-color: transparent;    
 }
 #main{
     text-align: center;

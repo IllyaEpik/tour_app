@@ -1,0 +1,22 @@
+/* body{ */
+    /* background-image: url('background.png'); */
+    /* image-rendering:crisp-edges; */
+    /* background-repeat:no-repeat/ */
+/* } */
+/* #background-img{
+    position: absolute;
+    z-index: -1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+} */
+body{
+    background: linear-gradient(to top,lightblue,70%,white);
+}
+button{
+    background-color: transparent;
+}
+input{
+    background-color: transparent;
+}

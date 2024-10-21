@@ -4,21 +4,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %} {% endblock %}</title>
     {% block link %} {% endblock %}
+    <link rel="stylesheet" href="{{ url_for('static', filename = '/style.css') }}" >
+
 </head>
 <body>
+    <!-- <img src="{{ url_for('static', filename = '/background.png') }}" alt="" id="background-img"> -->
     <style>a{color: black;}</style>
     {% if username %}
         <h1 id="username">{{ username }}</h1>
     {% endif %}
-    <div id="links">
-        <a href="/login" id="login" class="link">Авторизація</a>
-        <a href="/registration" id="registration" class="link">Регістрація</a>
+    <header id="links">
         <a href="/" id="home" class="link">Головна</a>
         <a href="/tour" id="tour" class="link">Путівки</a>
+        <!-- <a href="/personal" id="personal" class="link">Персоналізація</a> -->
         {% if username %}
             <a href="/logout/" style="color:red" class="link" id="logout">Вийти з аккаунту</a>
         {% endif %}
-    </div>
+        {% if not username %}
+            <a href="/login" id="login" class="link">Авторизація</a>
+            <a href="/registration" id="registration" class="link">Регістрація</a>
+        {% endif %}
+    </header>
     {% block content %} {% endblock %}
 </body>
 </html>

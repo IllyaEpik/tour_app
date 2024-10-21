@@ -3,7 +3,6 @@ from .models import Voucher
 import main.settings as settings
 
 def render_tour():
-    print(len(Voucher.query.all()),Voucher.query.all())
     if not len(Voucher.query.all()):
         voucher = Voucher(
             title = "boeing_777", 
@@ -34,7 +33,7 @@ def render_tour():
     list_tour = []
     for tour in Voucher.query.all():
         list_tour.append(tour)
-    print("1")
+    
     username = None
     if flask_login.current_user.is_authenticated:
         username = flask_login.current_user.username
