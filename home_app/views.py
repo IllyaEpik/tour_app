@@ -6,7 +6,7 @@ import flask_mail
 
 def render_home():
     if flask.request.method == "POST":
-        text = f"Клиент {flask.request.form['name']} оставил(а) отзыв: {flask.request.form['review']}.\n Почта для обратной связи с клиентом {flask.request.form['review']}."
+        text = f"Клиент {flask.request.form['name']} оставил(а) отзыв: {flask.request.form['review']}.\n Почта для обратной связи с клиентом {flask.request.form['email']}."
         message = flask_mail.Message(
                     "Message Order",
                     sender= ADMINISTRATION_ADRESS, 

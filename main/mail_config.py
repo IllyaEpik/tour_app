@@ -1,10 +1,10 @@
-import flask_mail
+import flask_mail,os
 from .settings import main,DATABASE
 
 
 ADMINISTRATION_ADRESS = "illyaepik@gmail.com"
-ADMINISTRATION_PASSWORD = "eillya 2354"
-
+ADMINISTRATION_PASSWORD = "c v h y j q m j v s u k h v b c"
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 main.config["MAIL_SERVER"] = 'smtp.gmail.com'
 main.config["MAIL_PORT"] = 587

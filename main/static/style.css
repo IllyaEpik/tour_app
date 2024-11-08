@@ -17,6 +17,24 @@ body{
 button{
     background-color: transparent;
 }
+button:hover{
+    border:5px solid gold;
+}
+#inform:hover{
+    
+    border:5px solid rgb(89, 0, 255);
+}
+input:hover{
+    
+    border:5px solid rgb(89, 0, 255);
+}
 input{
     background-color: transparent;
+    
+}
+*{
+    font-family: sans-serif;
+}
+form{
+    background: linear-gradient(to top,#4285F4,30%,#DBE2EF);
 }

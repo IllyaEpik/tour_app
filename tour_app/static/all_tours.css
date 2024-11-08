@@ -102,3 +102,10 @@ h3{
     margin: auto;
     text-align: center;
 } */
+#form{
+    background: none;
+}
+#button:hover{
+    border: none;
+    font-style: italic;
+}

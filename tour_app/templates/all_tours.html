@@ -7,8 +7,8 @@
  <h1 id="main">Сторінка відпочинку</h1>
  {% for tour in list_tour %}
     <div class="separation"></div>
-    <form method="post" >
-        <button name = "button" value = "{{tour.id}}" type = "submit">{{tour.title}}</button>
+    <form method="post" id="form">
+        <button name = "button" value = "{{tour.id}}" type = "submit" id="button">{{tour.title}}</button>
         <h3>дата: {{tour.date}}</h3>
         <h3>Країна: {{tour.country}}</h3>
     </form>
