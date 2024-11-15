@@ -4,13 +4,23 @@
 <link rel="stylesheet" href="{{ url_for('tour.static', filename = '/all_tours.css') }}" >
 {% endblock %}
 {% block content %}
- <h1 id="main">Сторінка відпочинку</h1>
+ <h1 id="main">Tours Page</h1>
  {% for tour in list_tour %}
     <div class="separation"></div>
     <form method="post" id="form">
-        <button name = "button" value = "{{tour.id}}" type = "submit" id="button">{{tour.title}}</button>
-        <h3>дата: {{tour.date}}</h3>
-        <h3>Країна: {{tour.country}}</h3>
+        <!-- <div> -->
+            <img src="{{ url_for('tour.static', filename = '/images/') }}{{tour.id}}.png" id="image" alt="">
+        <!-- </div> -->
+        <div id="texts">
+            <h3 id="title">{{tour.title}}</h3>
+            <h3>date: {{tour.date}}</h3>
+            <h3>country: {{tour.country}}</h3>
+            <button name = "button" value = "{{tour.id}}" type = "submit" id="button">detailed view</button>
+        </div>
+        <!-- <h3 id="title">{{tour.title}}</h3>
+        <h3>date: {{tour.date}}</h3>
+        <h3>country: {{tour.country}}</h3>
+        <button name = "button" value = "{{tour.id}}" type = "submit" id="button">detailed view</button> -->
     </form>
  {% endfor %} 
  <div class="separation"></div>

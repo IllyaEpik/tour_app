@@ -6,11 +6,11 @@
 {% block content %}
  
 
- <h1 id="main">Головна сторінка</h1>
+ <h1 id="main">Home Page</h1>
  <form method="post">
-    <input type="text" name="name" placeholder="name" id="inform">
-    <input type="text" name="email" placeholder="email" id="inform">
-    <textarea name="review" placeholder="review" id="inform"></textarea>
+    <input type="text" name="name" placeholder="name" id="inform" required>
+    <input type="text" name="email" placeholder="email" id="inform" required>
+    <textarea name="review" placeholder="review" id="inform" required></textarea>
     <button>Send</button>
 </form> 
  {% endblock %}

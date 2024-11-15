@@ -5,24 +5,25 @@
     <title>{% block title %} {% endblock %}</title>
     {% block link %} {% endblock %}
     <link rel="stylesheet" href="{{ url_for('static', filename = '/style.css') }}" >
-
+    <link type="image/png" sizes="737x737" rel="icon" href="{{ url_for('static', filename = '/icon.png') }}">
+    <!-- type="image/png" sizes="32x32" rel="icon" -->
 </head>
 <body>
     <!-- <img src="{{ url_for('static', filename = '/background.png') }}" alt="" id="background-img"> -->
     <style>a{color: black;}</style>
     {% if username %}
-        <h1 id="username">{{ username }}</h1>
+        <h1 id="username"><img id="icon" src="{{ url_for('static', filename = '/icon.png') }}" alt="">Hello, {{ username }}</h1>
     {% endif %}
     <header id="links">
-        <a href="/" id="home" class="link">Головна</a>
-        <a href="/tour" id="tour" class="link">Путівки</a>
+        <a href="/" id="home" class="link">Home</a>
+        <a href="/tour" id="tour" class="link">Tours</a>
         <!-- <a href="/personal" id="personal" class="link">Персоналізація</a> -->
         {% if username %}
-            <a href="/logout/" style="color:red" class="link" id="logout">Вийти з аккаунту</a>
+            <a href="/logout/" style="color:red" class="link" id="logout">Logout</a>
         {% endif %}
         {% if not username %}
-            <a href="/login" id="login" class="link">Авторизація</a>
-            <a href="/registration" id="registration" class="link">Регістрація</a>
+            <a href="/login" id="login" class="link">Login</a>
+            <a href="/registration" id="registration" class="link">Registration</a>
         {% endif %}
     </header>
     {% block content %} {% endblock %}

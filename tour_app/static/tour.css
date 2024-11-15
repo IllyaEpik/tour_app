@@ -45,8 +45,7 @@ button{
     margin-top: 50;
     /* margin */
 }
-#links{
-    /* color: aqua; */
+/* #links{
     right: 50;
     text-align: right;
     justify-content: center;
@@ -57,31 +56,28 @@ button{
     display: block;
     position:fixed;
     top: 10px;
-    /* margin: 10px; */
-    /* padding: 10px; */
-}
+} */
 /* #link{
 
     justify-content: center;
     align-items: center;
 } */
-#home{
-    /* margin-left: 10px; */
-    margin-right: 50;
+/* #home{
+    margin-right: 50; */
 
-}
+/* }
 #tour{
-    /* margin-left: 10px; */
     margin-right: 20;
 }
 #logout{
     margin-right: 30;
-}
+} */
 #username{
     position: fixed;
     top: 10px;
     height: min-content;
     margin: 0;
+    z-index: 1;
 }
 h2{
     font-size: 50;
@@ -100,3 +96,9 @@ div{
     margin: auto;
     text-align: center;
 }
+#image{
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+}
+/* #icon{} */

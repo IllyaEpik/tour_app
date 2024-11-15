@@ -4,17 +4,17 @@
 <link rel="stylesheet" href="{{ url_for('tour.static', filename = '/tour.css') }}" >
 {% endblock %}
 {% block content %}
- <h1 id="main">Сторінка відпочинку</h1>
+ <h1 id="main">Tour Page</h1>
  <div class="separation"></div>
  {% for tour in list_tour %}
     {% if id == tour.id %}
-
+    <img src="{{ url_for('tour.static', filename = '/images/') }}{{tour.id}}.png" id="image" alt="">
     <div>
         <h2>{{tour.title}}</h2>
-        <h3>дата: {{tour.date}}</h3>
-        <h3>Країна: {{tour.country}}</h3>
-        <h3>Ціна: {{tour.price}}</h3>
-        <h3>Опис: {{tour.description}}</h3>
+        <h3>date: {{tour.date}}</h3>
+        <h3>country: {{tour.country}}</h3>
+        <h3>price: {{tour.price}}</h3>
+        <h3>description: {{tour.description}}</h3>
     </div>
     {% endif %}
  {% endfor %} 

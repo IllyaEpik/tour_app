@@ -44,7 +44,7 @@ button{
     font-size: 50;
     margin-top: 50;
 }
-#links{
+/* #links{
     right: 50;
     text-align: right;
     justify-content: center;
@@ -55,26 +55,18 @@ button{
     display: block;
     position:fixed;
     top: 10px;
-    /* margin: 10px; */
-    /* padding: 10px; */
 }
-/* #link{
 
-    justify-content: center;
-    align-items: center;
-} */
 #home{
-    /* margin-left: 10px; */
     margin-right: 50;
 
 }
 #tour{
-    /* margin-left: 10px; */
     margin-right: 20;
 }
 #logout{
     margin-right: 30;
-}
+} */
 #username{
     position: fixed;
     top: 10px;
