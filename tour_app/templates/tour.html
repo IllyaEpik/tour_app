@@ -5,11 +5,12 @@
 {% endblock %}
 {% block content %}
  <h1 id="main">Tour Page</h1>
- <div class="separation"></div>
+ <!-- <div class="separation"></div> -->
  {% for tour in list_tour %}
     {% if id == tour.id %}
-    <img src="{{ url_for('tour.static', filename = '/images/') }}{{tour.id}}.png" id="image" alt="">
-    <div>
+    <div class="cart">
+        <img src="{{ url_for('tour.static', filename = '/images/') }}{{tour.id}}.png" id="image" alt="">
+        <!-- <div id="empty"></div> -->
         <h2>{{tour.title}}</h2>
         <h3>date: {{tour.date}}</h3>
         <h3>country: {{tour.country}}</h3>
@@ -18,5 +19,5 @@
     </div>
     {% endif %}
  {% endfor %} 
-<div class="separation"></div>
+<!-- <div class="separation"></div> -->
 {% endblock %}
